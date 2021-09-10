@@ -1,0 +1,80 @@
+/**********************************************************************
+  Filename    : AdvancedCalculator.txt
+  Product     : Advanced Simple Calculator
+  Description : Simple [Python] Advanced Calculator
+  Author      : Evan Barnes
+  Modification: 2021/09/10
+**********************************************************************/
+
+import math
+
+print("1 = Addition")
+print("2 = Subtraction")
+print("3 = Multiplication")
+print("4 = Division")
+print("5 = SquareRoot")
+print("6 = Exit")
+print("7 = Credits")
+
+choice = int(input("Which operation would you like to use? "))
+
+if choice == 1:
+  print("Addition")
+
+  first = float(input("Enter first number: "))
+  second = float(input("Enter second number: "))
+
+  answer = first + second
+
+  print(first, "+", second, "=", answer)
+
+elif choice == 2:
+  print("Subtraction")
+
+  first = float(input("Enter first number: "))
+  second = float(input("Enter second number: "))
+
+  answer = first - second
+
+  print(first, "-", second, "=", answer)
+
+elif choice == 3:
+  print("Multiplication")
+
+  first = float(input("Enter first number: "))
+  second = float(input("Enter second number: "))
+
+  answer = first * second
+
+  print(first, "x", second, "=", answer)
+
+elif choice == 4:
+  print("Division")
+
+  first = float(input("Enter first number: "))
+  second = float(input("Enter second number: "))
+
+  if second == 0:
+    print("ERROR: Cannot divide by zero.")
+  
+  else:
+      answer = first / second
+
+      print(first, "÷", second, "=", answer)
+
+elif choice == 5:
+  print("SquareRoot")
+
+  first = float(input("Enter number: 2"))
+  math.sqrt(first)
+  print("The SquareRoot of ", first, "is", math.sqrt(first))
+
+elif choice == 6:
+  exit()
+
+elif choice == 7:
+  print("This beautifull calculator was brought to you by: Evan Barnes!")
+  
+  exit()
+
+
